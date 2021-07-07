@@ -3,7 +3,7 @@
 // в классах не должно быть классов не совпадающих с названием файла, за исключением g-
 
 const dirTree = require("directory-tree");
-
+const fs = require('fs');
 
 var check =
 {
