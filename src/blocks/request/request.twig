@@ -1,45 +1,155 @@
 <section class="request">
 	<div class="container">
-		<div class="request__exit">
-			
-		</div>
+		<div class="request__container">
+			<button class="request__exit">
+				{% include "assets/svg/exit.svg"%}
+			</button>
+			<div class="request__content">
+				<form action="">
+					<section class="request__section">
+						<h3 class="request__titel">Have a project in mind?</h3>
+						<p class="request__subtitle">Drop us a line, we would love to hear from you about your bright <br>idea!</p>
+						<div class="requset__user-wrap">
+							<label class="request__user-label">
+								<input type="text" class="request__input">
+								<span class="request__placeholder">What’s your name?</span>
+							</label>
+							<label class="request__user-label">
+								<input type="text" class="request__input">
+								<span class="request__placeholder">What’s your phone number?</span>
+							</label>
+							<label class="request__user-label">
+								<input type="text" class="request__input">
+								<span class="request__placeholder">What’s your company’s name?</span>
+							</label>
+							<label class="request__user-label">
+								<input type="text" class="request__input">
+								<span class="request__placeholder">Does your company have a site?</span>
+							</label>
+						</div>
+					</section>
 
-		<aside class="request__aside">
-			<div class="request__logo">
-				{% include "assets/svg/logo.svg"%}
+					<section class="request__section">
+						<h3 class="request__titel">Tell us about your project.</h3>
+						<p class="request__subtitle">Give us your best point. Also, we don't take on other agencies <br>and studios as clients, sorry.</p>
+						<textarea class="request__textarea" placeholder="Start typing..."></textarea>
+						<div class="request__file-wrap">
+							<span class="request__img-textarea">
+								{% include "assets/svg/add-file.svg"%}
+							</span>
+							<label>
+								<input type="file" class="request__file">
+								<span class="request__file-text">Upload your brief</span>
+							</label>
+						</div>
+					</section>	
+					<section class="request__section">
+						<h3 class="request__titel">What do you need help with?</h3>
+						<p class="request__subtitle">Not sure what you’re after? <a href="#">Read more about our services.</a></p>
+						<div class="request__checklist">
+							<h5 class="request__checklist-title">Websites</h5>
+							<label>
+								<input type="checkbox" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">Website Design</span>
+							</label>
+							<label>
+								<input type="checkbox" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">Website Development</span>
+							</label>
+							<label>
+								<input type="checkbox" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">Website Support</span>
+							</label>
+						</div>
+						<div class="request__checklist">
+							<h5 class="request__checklist-title">Products</h5>
+							<label>
+								<input type="checkbox" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">Product Design</span>
+							</label>
+							<label>
+								<input type="checkbox" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">Product Development</span>
+							</label>
+							<label>
+								<input type="checkbox" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">Product Support</span>
+							</label>
+						</div>
+					</section>
+					<section class="request__section">
+						<h3 class="request__titel">Do you have a budget in mind?</h3>
+						<p class="request__subtitle">Based on your selection of services, we’ve recommended a budget range below. Keep in mind that this is a guess, subject to time and scope.</p>
+						<div class="request__checklist">
+							<h5 class="request__checklist-title">Websites</h5>
+							<label>
+								<input type="radio" name="radio" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">Less than $5k</span>
+							</label>
+							<label>
+								<input type="radio" name="radio" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">$5k to $8k</span>
+							</label>
+							<label>
+								<input type="radio" name="radio" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">$8k to $12k</span>
+							</label>
+						</div>
+						<div class="request__checklist">
+							<h5 class="request__checklist-title">Products</h5>
+							<label>
+								<input type="radio" name="radio" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">$12k to $20k</span>
+							</label>
+							<label>
+								<input type="radio" name="radio" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">More than $20k</span>
+							</label>
+							<label>
+								<input type="radio" name="radio" class="request__input-checkbox">
+								<span class="request__checked"></span>
+								<span class="request__checked-text">Whatever it costs</span>
+							</label>
+						</div>
+					</section>
+					<div class="request__buttons">
+						<button class="request__btn-canel">Cancel</button>
+						<button class="request__btn-submit">Submit</button>
+					</div>
+				</form>	
 			</div>
-			<section class="request__preview">
-				<p>
-					ODVA understood my brief, customer base and goals better than any other design agency. They explained their design process and kept me informed every step of the way. I love the way the entire process was managed and the final work delivered exceeded my expectations.
-				</p>
-				<picture>
 
-				</picture>	
-				<div class="request__autor">
-					<h5>Jony Ive</h5>
-					<p>British-American industrial, product and architectural designer</p>
+			<aside class="request__aside">
+				<div class="request__logo">
+					{% include "assets/svg/logo.svg"%}
 				</div>
-			</section>
-		</aside>
-
-		<div class="request__content">
-			<section>
-					<h1 class="request__titel">Have a project in mind?</h1>
-					<p class="subtitle">Drop us a line, we would love to hear from you about your bright idea!</p>
-			</section>
-			<section>
-				<h1 class="request__titel"></h1>
-				<p class="subtitle"></p>
-				<div></div>
-			</section>
-			<section>
-				<h1 class="request__titel"></h1>
-				<p class="subtitle"></p>
-			</section>
-			<section>
-				<h1 class="request__titel"></h1>
-				<p class="subtitle"></p>
-			</section>	
+				<section class="request__preview">
+					<p>
+						ODVA understood my brief, customer base and goals better than any other design agency. They explained their design process and kept me informed every step of the way. I love the way the entire process was managed and the final work delivered exceeded my expectations.
+					</p>
+					<div class="request__author">
+						<picture class="request__author-img">
+							<source srsset ="img/author.webp">
+							<img src="img/author.png" alt="">
+						</picture>	
+						<div>
+							<h5>Jony Ive</h5>
+							<p>British-American industrial, product and architectural designer</p>
+						</div>
+					</div>
+				</section>
+			</aside>
 		</div>
 	</div>
 </section>

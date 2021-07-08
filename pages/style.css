@@ -78,6 +78,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url("./fonts/Inter/Extra-Bold/Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("./fonts/Inter/Bold/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url("./fonts/Fira-Code/Regular/FiraCode-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*  Переменные со шрифтами  */
 
 /*  Переменные с гарнитурами шрифтов  */
@@ -608,7 +632,7 @@ a:focus {
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1425px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -651,9 +675,326 @@ li.L9 {
 
 /* blocks */
 
-/* Пример подключения*/
+.request__subtitle,
+.request__placeholder,
+.request__textarea {
+  margin: 0;
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: -1px;
+}
 
-/* @import 'blocks/component/component'; */
+.request {
+  background-color: #FAF8F6;
+}
+
+.request__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.request__exit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  border: 2px solid #282C34;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.request__exit svg {
+  margin: auto;
+}
+
+.request__content {
+  margin-right: 105px;
+  padding-top: 128px;
+  padding-bottom: 112px;
+}
+
+.request__section {
+  margin-bottom: 80px;
+}
+
+.request__section:nth-child(3) {
+  margin-bottom: 64px;
+}
+
+.request__titel {
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #282C34;
+}
+
+.request__section:first-of-type .request__titel {
+  margin-bottom: 8px;
+}
+
+.request__section:nth-of-type(2) .request__titel,
+.request__section:nth-of-type(3) .request__titel {
+  margin-bottom: 12px;
+}
+
+.request__subtitle {
+  margin-bottom: 48px;
+}
+
+.request__subtitle a {
+  display: inline-block;
+  margin-left: 3px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  color: #282C34;
+  border-bottom: 2px solid #000;
+  line-height: 19px;
+  letter-spacing: 0;
+}
+
+.request__user-label {
+  position: relative;
+}
+
+.request__placeholder {
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  color: #969AA2;
+}
+
+.requset__user-wrap {
+  display: grid;
+  grid-template-columns: 380px 380px;
+  grid-template-rows: 80px 80px;
+  gap: 16px;
+}
+
+.request__input {
+  width: 100%;
+  height: 100%;
+  padding-left: 24px;
+  padding-top: 38px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+  color: #282C34;
+}
+
+.request__textarea {
+  width: 776px;
+  height: 240px;
+  padding-left: 24px;
+  padding-top: 24px;
+  margin-bottom: 12px;
+  border: none;
+  resize: none;
+}
+
+.request__file-wrap {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.request__file-wrap svg {
+  margin-left: 2px;
+  margin-right: 7px;
+}
+
+.request__file-wrap label {
+  line-height: 0;
+}
+
+.request__file {
+  display: none;
+  line-height: 0;
+}
+
+.request__file-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #282C34;
+  cursor: pointer;
+  margin: auto;
+}
+
+.request__checklist {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 51px;
+}
+
+.request__checklist label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.request__checklist-title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+  color: #282C34;
+}
+
+.request__input-checkbox {
+  display: none;
+}
+
+.request__checked {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.request__input-checkbox:checked ~ .request__checked {
+  background: #282C34;
+  background-position: center center;
+  background-image: url("./svg/check.svg");
+  background-repeat: no-repeat;
+}
+
+.request__checked-text {
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 34px;
+  letter-spacing: -2px;
+  color: #54565E;
+}
+
+.request__btn-canel,
+.request__btn-submit {
+  height: 56px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+}
+
+.request__btn-canel {
+  width: 104px;
+  background: #FFFFFF;
+  border: 2px solid #282C34;
+  color: #282C34;
+}
+
+.request__btn-submit {
+  width: 137px;
+  background: #282C34;
+  color: #fff;
+}
+
+.request__aside {
+  padding-top: 31px;
+}
+
+.request__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+.request__preview {
+  width: 416px;
+}
+
+.request__preview p:first-child {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.request__author {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.request__author h5 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.request__author p {
+  margin: 0;
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.request__author-img {
+  margin-right: 24px;
+}
 
 /* pages */
 

@@ -26,51 +26,166 @@
 		</header>
 		<section class="request">
 			<div class="container">
-				<div class="request__exit">
-
-				</div>
-
-				<aside class="request__aside">
-					<div class="request__logo">
-						<svg width="296" height="270" viewBox="0 0 296 270" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M241.185 121.704C241.185 188.375 187.194 242.422 120.593 242.422C53.9911 242.422 0 188.375 0 121.704C0 55.0329 53.9911 0.985363 120.593 0.985363C187.194 0.985363 241.185 55.0329 241.185 121.704ZM197.333 121.704C197.333 164.131 162.975 198.525 120.593 198.525C78.2098 198.525 43.8519 164.131 43.8519 121.704C43.8519 79.2769 78.2098 44.883 120.593 44.883C162.975 44.883 197.333 79.2769 197.333 121.704Z" fill="#282C34" />
-							<path d="M296 198.525C296 207.616 288.638 214.986 279.556 214.986C270.474 214.986 263.111 207.616 263.111 198.525C263.111 189.433 270.474 182.063 279.556 182.063C288.638 182.063 296 189.433 296 198.525Z" fill="#282C34" />
-							<path d="M296 253.397C296 262.488 288.638 269.858 279.556 269.858C270.474 269.858 263.111 262.488 263.111 253.397C263.111 244.305 270.474 236.935 279.556 236.935C288.638 236.935 296 244.305 296 253.397Z" fill="#282C34" />
+				<div class="request__container">
+					<button class="request__exit">
+						<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9.40544 8.0025L15.6974 1.7125C16.0875 1.3225 16.0875 0.6925 15.6974 0.3025C15.3073 -0.0875 14.6771 -0.0875 14.287 0.3025L7.995 6.5925L1.70303 0.2925C1.31291 -0.0975 0.682713 -0.0975 0.292591 0.2925C-0.0975305 0.6825 -0.0975305 1.3125 0.292591 1.7025L6.58456 8.0025L0.292591 14.2925C-0.0975305 14.6825 -0.0975305 15.3125 0.292591 15.7025C0.482651 15.9025 0.732729 16.0025 0.99281 16.0025C1.25289 16.0025 1.50297 15.9025 1.70303 15.7125L7.995 9.4125L14.287 15.7025C14.487 15.9025 14.7371 16.0025 14.9972 16.0025C15.2573 16.0025 15.5073 15.9025 15.7074 15.7125C16.0975 15.3225 16.0975 14.6925 15.7074 14.3025L9.40544 8.0025Z" fill="#282C34" />
 						</svg>
+					</button>
+					<div class="request__content">
+						<form action="">
+							<section class="request__section">
+								<h3 class="request__titel">Have a project in mind?</h3>
+								<p class="request__subtitle">Drop us a line, we would love to hear from you about your bright <br>idea!</p>
+								<div class="requset__user-wrap">
+									<label class="request__user-label">
+										<input type="text" class="request__input">
+										<span class="request__placeholder">What’s your name?</span>
+									</label>
+									<label class="request__user-label">
+										<input type="text" class="request__input">
+										<span class="request__placeholder">What’s your phone number?</span>
+									</label>
+									<label class="request__user-label">
+										<input type="text" class="request__input">
+										<span class="request__placeholder">What’s your company’s name?</span>
+									</label>
+									<label class="request__user-label">
+										<input type="text" class="request__input">
+										<span class="request__placeholder">Does your company have a site?</span>
+									</label>
+								</div>
+							</section>
+
+							<section class="request__section">
+								<h3 class="request__titel">Tell us about your project.</h3>
+								<p class="request__subtitle">Give us your best point. Also, we don't take on other agencies <br>and studios as clients, sorry.</p>
+								<textarea class="request__textarea" placeholder="Start typing..."></textarea>
+								<div class="request__file-wrap">
+									<span class="request__img-textarea">
+										<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.5706 1.42915C14.6306 -0.510847 11.4206 -0.470847 9.43057 1.51915L7.29057 3.64915C6.90057 4.03915 6.90057 4.66915 7.29057 5.05915C7.68057 5.44915 8.31057 5.44915 8.70057 5.05915L10.8306 2.92915C12.0506 1.71915 13.9806 1.66915 15.1506 2.83915C15.7106 3.39915 16.0106 4.14915 16.0006 4.95915C15.9906 5.77915 15.6506 6.55915 15.0606 7.14915L12.9306 9.27915C12.5406 9.66915 12.5406 10.2992 12.9306 10.6892C13.1306 10.8892 13.3806 10.9792 13.6406 10.9792C13.9006 10.9792 14.1506 10.8792 14.3506 10.6892L16.4806 8.55915C17.4406 7.61915 17.9806 6.34915 18.0006 4.99915C18.0206 3.64915 17.5106 2.37915 16.5706 1.42915Z" fill="#282C34" />
+											<path d="M9.29057 12.9292L7.16057 15.0592C5.95057 16.2792 4.01057 16.3192 2.84057 15.1492C2.29057 14.5892 1.99057 13.8392 2.00057 13.0292C2.01057 12.2092 2.35057 11.4292 2.94057 10.8392L5.07057 8.70915C5.46057 8.31915 5.46057 7.68915 5.07057 7.29915C4.68057 6.90915 4.05057 6.90915 3.66057 7.29915L1.53057 9.41915C0.560567 10.3792 0.0205667 11.6492 0.000566711 12.9992C-0.0194333 14.3592 0.490567 15.6192 1.43057 16.5692C2.39057 17.5192 3.65057 17.9992 4.92057 17.9992C6.23057 17.9992 7.56057 17.4892 8.58057 16.4792L10.7106 14.3492C11.1006 13.9592 11.1006 13.3292 10.7106 12.9392C10.3206 12.5392 9.68057 12.5392 9.29057 12.9292Z" fill="#282C34" />
+											<path d="M10.7906 5.78915L5.79057 10.7892C5.40057 11.1792 5.40057 11.8092 5.79057 12.1992C5.99057 12.3992 6.24057 12.4892 6.50057 12.4892C6.76057 12.4892 7.01057 12.3892 7.21057 12.1992L12.2106 7.19915C12.6006 6.80915 12.6006 6.17915 12.2106 5.78915C11.8206 5.39915 11.1806 5.39915 10.7906 5.78915Z" fill="#282C34" />
+										</svg>
+									</span>
+									<label>
+										<input type="file" class="request__file">
+										<span class="request__file-text">Upload your brief</span>
+									</label>
+								</div>
+							</section>
+							<section class="request__section">
+								<h3 class="request__titel">What do you need help with?</h3>
+								<p class="request__subtitle">Not sure what you’re after? <a href="#">Read more about our services.</a></p>
+								<div class="request__checklist">
+									<h5 class="request__checklist-title">Websites</h5>
+									<label>
+										<input type="checkbox" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">Website Design</span>
+									</label>
+									<label>
+										<input type="checkbox" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">Website Development</span>
+									</label>
+									<label>
+										<input type="checkbox" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">Website Support</span>
+									</label>
+								</div>
+								<div class="request__checklist">
+									<h5 class="request__checklist-title">Products</h5>
+									<label>
+										<input type="checkbox" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">Product Design</span>
+									</label>
+									<label>
+										<input type="checkbox" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">Product Development</span>
+									</label>
+									<label>
+										<input type="checkbox" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">Product Support</span>
+									</label>
+								</div>
+							</section>
+							<section class="request__section">
+								<h3 class="request__titel">Do you have a budget in mind?</h3>
+								<p class="request__subtitle">Based on your selection of services, we’ve recommended a budget range below. Keep in mind that this is a guess, subject to time and scope.</p>
+								<div class="request__checklist">
+									<h5 class="request__checklist-title">Websites</h5>
+									<label>
+										<input type="radio" name="radio" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">Less than $5k</span>
+									</label>
+									<label>
+										<input type="radio" name="radio" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">$5k to $8k</span>
+									</label>
+									<label>
+										<input type="radio" name="radio" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">$8k to $12k</span>
+									</label>
+								</div>
+								<div class="request__checklist">
+									<h5 class="request__checklist-title">Products</h5>
+									<label>
+										<input type="radio" name="radio" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">$12k to $20k</span>
+									</label>
+									<label>
+										<input type="radio" name="radio" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">More than $20k</span>
+									</label>
+									<label>
+										<input type="radio" name="radio" class="request__input-checkbox">
+										<span class="request__checked"></span>
+										<span class="request__checked-text">Whatever it costs</span>
+									</label>
+								</div>
+							</section>
+							<div class="request__buttons">
+								<button class="request__btn-canel">Cancel</button>
+								<button class="request__btn-submit">Submit</button>
+							</div>
+						</form>
 					</div>
-					<section class="request__preview">
-						<p>
-							ODVA understood my brief, customer base and goals better than any other design agency. They explained their design process and kept me informed every step of the way. I love the way the entire process was managed and the final work delivered exceeded my expectations.
-						</p>
-						<picture>
 
-						</picture>
-						<div class="request__autor">
-							<h5>Jony Ive</h5>
-							<p>British-American industrial, product and architectural designer</p>
+					<aside class="request__aside">
+						<div class="request__logo">
+							<svg width="296" height="270" viewBox="0 0 296 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M241.185 121.704C241.185 188.375 187.194 242.422 120.593 242.422C53.9911 242.422 0 188.375 0 121.704C0 55.0329 53.9911 0.985363 120.593 0.985363C187.194 0.985363 241.185 55.0329 241.185 121.704ZM197.333 121.704C197.333 164.131 162.975 198.525 120.593 198.525C78.2098 198.525 43.8519 164.131 43.8519 121.704C43.8519 79.2769 78.2098 44.883 120.593 44.883C162.975 44.883 197.333 79.2769 197.333 121.704Z" fill="#282C34" />
+								<path d="M296 198.525C296 207.616 288.638 214.986 279.556 214.986C270.474 214.986 263.111 207.616 263.111 198.525C263.111 189.433 270.474 182.063 279.556 182.063C288.638 182.063 296 189.433 296 198.525Z" fill="#282C34" />
+								<path d="M296 253.397C296 262.488 288.638 269.858 279.556 269.858C270.474 269.858 263.111 262.488 263.111 253.397C263.111 244.305 270.474 236.935 279.556 236.935C288.638 236.935 296 244.305 296 253.397Z" fill="#282C34" />
+							</svg>
 						</div>
-					</section>
-				</aside>
-
-				<div class="request__content">
-					<section>
-						<h1 class="request__titel">Have a project in mind?</h1>
-						<p class="subtitle">Drop us a line, we would love to hear from you about your bright idea!</p>
-
-						for
-					</section>
-					<section>
-						<h1 class="request__titel"></h1>
-						<p class="subtitle"></p>
-					</section>
-					<section>
-						<h1 class="request__titel"></h1>
-						<p class="subtitle"></p>
-					</section>
-					<section>
-						<h1 class="request__titel"></h1>
-						<p class="subtitle"></p>
-					</section>
+						<section class="request__preview">
+							<p>
+								ODVA understood my brief, customer base and goals better than any other design agency. They explained their design process and kept me informed every step of the way. I love the way the entire process was managed and the final work delivered exceeded my expectations.
+							</p>
+							<div class="request__author">
+								<picture class="request__author-img">
+									<source srsset="img/author.webp">
+									<img src="img/author.png" alt="">
+								</picture>
+								<div>
+									<h5>Jony Ive</h5>
+									<p>British-American industrial, product and architectural designer</p>
+								</div>
+							</div>
+						</section>
+					</aside>
 				</div>
 			</div>
 		</section>

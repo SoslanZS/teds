@@ -67,3 +67,31 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+@font-face
+{
+	font-family: 'Inter';
+	src:url('./fonts/Inter/Extra-Bold/Inter-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face
+{
+	font-family: 'Inter';
+	src:url('./fonts/Inter/Bold/Inter-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face
+{
+	font-family: 'Fira Code';
+	src:url('./fonts/Fira-Code/Regular/FiraCode-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
