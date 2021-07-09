@@ -720,6 +720,7 @@ li.L9 {
 }
 
 .request__content {
+  max-width: 776px;
   margin-right: 105px;
   padding-top: 128px;
   padding-bottom: 112px;
@@ -740,17 +741,22 @@ li.L9 {
   font-weight: 800;
   font-size: 48px;
   line-height: 64px;
-  letter-spacing: -1px;
+  letter-spacing: -1.2px;
   color: #282C34;
 }
 
-.request__section:first-of-type .request__titel {
+.request__section:first-child .request__titel {
   margin-bottom: 8px;
 }
 
-.request__section:nth-of-type(2) .request__titel,
-.request__section:nth-of-type(3) .request__titel {
+.request__section:nth-child(2) .request__titel,
+.request__section:nth-child(3) .request__titel,
+.request__section:nth-child(4) .request__titel {
   margin-bottom: 12px;
+}
+
+.request__section:nth-child(4) {
+  margin-bottom: 64px;
 }
 
 .request__subtitle {
@@ -804,6 +810,10 @@ li.L9 {
   font-size: 17px;
   line-height: 26px;
   color: #282C34;
+}
+
+.request__input:focus {
+  border: 2px solid #282C34;
 }
 
 .request__textarea {
@@ -873,6 +883,10 @@ li.L9 {
   margin-bottom: 16px;
 }
 
+.request__radio-wrap {
+  margin-right: 117px;
+}
+
 .request__checklist-title {
   margin: 0;
   margin-bottom: 23px;
@@ -911,8 +925,12 @@ li.L9 {
   font-weight: normal;
   font-size: 21px;
   line-height: 34px;
-  letter-spacing: -2px;
+  letter-spacing: -1.9px;
   color: #54565E;
+}
+
+.request__radio-text {
+  letter-spacing: -1.5px;
 }
 
 .request__btn-canel,
@@ -930,6 +948,8 @@ li.L9 {
 
 .request__btn-canel {
   width: 104px;
+  margin-left: -1px;
+  margin-right: 3px;
   background: #FFFFFF;
   border: 2px solid #282C34;
   color: #282C34;
@@ -943,6 +963,7 @@ li.L9 {
 
 .request__aside {
   padding-top: 31px;
+  width: 486px;
 }
 
 .request__logo {
@@ -961,9 +982,11 @@ li.L9 {
   width: 416px;
 }
 
-.request__preview p:first-child {
+.request__preview > p {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
 }
 
 .request__author {
@@ -976,6 +999,7 @@ li.L9 {
 .request__author h5 {
   margin: 0;
   margin-bottom: 8px;
+  padding-top: 3px;
   font-family: Inter;
   font-style: normal;
   font-weight: 800;
@@ -990,6 +1014,7 @@ li.L9 {
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
+  letter-spacing: -0.6px;
 }
 
 .request__author-img {

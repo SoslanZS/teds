@@ -39,19 +39,19 @@
 								<p class="request__subtitle">Drop us a line, we would love to hear from you about your bright <br>idea!</p>
 								<div class="requset__user-wrap">
 									<label class="request__user-label">
-										<input type="text" class="request__input">
+										<input type="text" class="request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
 										<span class="request__placeholder">What’s your name?</span>
 									</label>
 									<label class="request__user-label">
-										<input type="text" class="request__input">
+										<input type="text" class="request__input" id="_request__telefon" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
 										<span class="request__placeholder">What’s your phone number?</span>
 									</label>
 									<label class="request__user-label">
-										<input type="text" class="request__input">
+										<input type="text" class="request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
 										<span class="request__placeholder">What’s your company’s name?</span>
 									</label>
 									<label class="request__user-label">
-										<input type="text" class="request__input">
+										<input type="text" class="request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
 										<span class="request__placeholder">Does your company have a site?</span>
 									</label>
 								</div>
@@ -70,8 +70,8 @@
 										</svg>
 									</span>
 									<label>
-										<input type="file" class="request__file">
-										<span class="request__file-text">Upload your brief</span>
+										<input type="file" class="request__file" id="file">
+										<span class="request__file-text _request__file-text" onclick="o2.request.fileAdd(this)">Upload your brief</span>
 									</label>
 								</div>
 							</section>
@@ -117,45 +117,44 @@
 							</section>
 							<section class="request__section">
 								<h3 class="request__titel">Do you have a budget in mind?</h3>
-								<p class="request__subtitle">Based on your selection of services, we’ve recommended a budget range below. Keep in mind that this is a guess, subject to time and scope.</p>
-								<div class="request__checklist">
-									<h5 class="request__checklist-title">Websites</h5>
+								<p class="request__subtitle">Based on your selection of services, we’ve recommended a budget <br>
+						range below. Keep in mind that this is a guess, subject to time <br>and scope.</p>
+								<div class="request__checklist request__radio-wrap">
 									<label>
 										<input type="radio" name="radio" class="request__input-checkbox">
 										<span class="request__checked"></span>
-										<span class="request__checked-text">Less than $5k</span>
+										<span class="request__checked-text request__radio-text">Less than $5k</span>
 									</label>
 									<label>
 										<input type="radio" name="radio" class="request__input-checkbox">
 										<span class="request__checked"></span>
-										<span class="request__checked-text">$5k to $8k</span>
+										<span class="request__checked-text request__radio-text">$5k to $8k</span>
 									</label>
 									<label>
 										<input type="radio" name="radio" class="request__input-checkbox">
 										<span class="request__checked"></span>
-										<span class="request__checked-text">$8k to $12k</span>
+										<span class="request__checked-text request__radio-text">$8k to $12k</span>
 									</label>
 								</div>
-								<div class="request__checklist">
-									<h5 class="request__checklist-title">Products</h5>
+								<div class="request__checklist request__radio-wrap">
 									<label>
 										<input type="radio" name="radio" class="request__input-checkbox">
 										<span class="request__checked"></span>
-										<span class="request__checked-text">$12k to $20k</span>
+										<span class="request__checked-text request__radio-text ">$12k to $20k</span>
 									</label>
 									<label>
 										<input type="radio" name="radio" class="request__input-checkbox">
 										<span class="request__checked"></span>
-										<span class="request__checked-text">More than $20k</span>
+										<span class="request__checked-text request__radio-text">More than $20k</span>
 									</label>
 									<label>
 										<input type="radio" name="radio" class="request__input-checkbox">
 										<span class="request__checked"></span>
-										<span class="request__checked-text">Whatever it costs</span>
+										<span class="request__checked-text request__radio-text">Whatever it costs</span>
 									</label>
 								</div>
 							</section>
-							<div class="request__buttons">
+							<div>
 								<button class="request__btn-canel">Cancel</button>
 								<button class="request__btn-submit">Submit</button>
 							</div>
@@ -181,7 +180,7 @@
 								</picture>
 								<div>
 									<h5>Jony Ive</h5>
-									<p>British-American industrial, product and architectural designer</p>
+									<p>British-American industrial, product <br>and architectural designer</p>
 								</div>
 							</div>
 						</section>
