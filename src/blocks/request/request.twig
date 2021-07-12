@@ -11,20 +11,24 @@
 						<p class="request__subtitle">Drop us a line, we would love to hear from you about your bright <br>idea!</p>
 						<div class="requset__user-wrap">
 							<label class="request__user-label">
-								<input type="text" class="request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
-								<span class="request__placeholder">What’s your name?</span>
+								<input type="text" class="request__input _request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
+								<span class="request__placeholder _request__placeholder">What’s your name?</span>
+								<div class="request__massage _massage">{% include "assets/svg/i_attention.svg"%}message</div>
 							</label>
 							<label class="request__user-label">
-								<input type="text" class="request__input"  id="_request__telefon" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
-								<span class="request__placeholder">What’s your phone number?</span>
+								<input type="text" class="request__input _request__input"  id="_request__telefon" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
+								<span class="request__placeholder _request__placeholder">What’s your phone number?</span>
+								<div class="request__massage _massage">{% include "assets/svg/i_attention.svg"%}message</div>
 							</label>
 							<label class="request__user-label">
-								<input type="text" class="request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
-								<span class="request__placeholder">What’s your company’s name?</span>
+								<input type="text" class="request__input _request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
+								<span class="request__placeholder _request__placeholder">What’s your company’s name?</span>
+								<div class="request__massage _massage">{% include "assets/svg/i_attention.svg"%}Please fill in this field</div>
 							</label>
 							<label class="request__user-label">
-								<input type="text" class="request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
-								<span class="request__placeholder">Does your company have a site?</span>
+								<input type="text" class="request__input _request__input" onfocus="o2.request.inputFocus(this)" onblur="o2.request.inputBlur(this)">
+								<span class="request__placeholder _request__placeholder">Does your company have a site?</span>
+								<div class="request__massage _massage">{% include "assets/svg/i_attention.svg"%}message</div>
 							</label>
 						</div>
 					</section>
@@ -32,15 +36,19 @@
 					<section class="request__section">
 						<h3 class="request__titel">Tell us about your project.</h3>
 						<p class="request__subtitle">Give us your best point. Also, we don't take on other agencies <br>and studios as clients, sorry.</p>
-						<textarea class="request__textarea" placeholder="Start typing..."></textarea>
+						<label class="request__user-label">
+							<textarea class="request__textarea _request__textarea" placeholder="Start typing..." onfocus="o2.request.textareaFocus(this)" onblur="o2.request.textareaBlur(this)"></textarea>
+							<div class="request__massage _massage">{% include "assets/svg/i_attention.svg"%}message</div>
+						</label>
 						<div class="request__file-wrap">
 							<span class="request__img-textarea">
 								{% include "assets/svg/add-file.svg"%}
 							</span>
 							<label>
-								<input type="file" class="request__file" id="file">
+								<input type="file" class="request__input-file" id="file"  multiple>
 								<span class="request__file-text _request__file-text" onclick="o2.request.fileAdd(this)">Upload your brief</span>
 							</label>
+							<div class="_request__file-name"></div>
 						</div>
 					</section>	
 					<section class="request__section">
@@ -124,7 +132,7 @@
 					</section>
 					<div>
 						<button class="request__btn-canel">Cancel</button>
-						<button class="request__btn-submit">Submit</button>
+						<button type="button" class="request__btn-submit" onclick="o2.request.btnSubmit(this)">Submit</button>
 					</div>
 				</form>	
 			</div>

@@ -778,6 +778,7 @@ li.L9 {
 }
 
 .request__user-label {
+  display: inline-block;
   position: relative;
 }
 
@@ -786,6 +787,33 @@ li.L9 {
   top: 27px;
   left: 24px;
   color: #969AA2;
+}
+
+.request__massage,
+.request__massage-area {
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 23px;
+  top: -36px;
+  padding: 6px 8px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  background: #282C34;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.request__massage svg,
+.request__massage-area svg {
+  margin-right: 8px;
 }
 
 .requset__user-wrap {
@@ -812,7 +840,8 @@ li.L9 {
   color: #282C34;
 }
 
-.request__input:focus {
+.request__input:focus,
+.request__textarea:focus {
   border: 2px solid #282C34;
 }
 
@@ -823,7 +852,10 @@ li.L9 {
   padding-top: 24px;
   margin-bottom: 12px;
   border: none;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   resize: none;
+  letter-spacing: -0.7px;
 }
 
 .request__file-wrap {
@@ -842,7 +874,7 @@ li.L9 {
   line-height: 0;
 }
 
-.request__file {
+.request__input-file {
   display: none;
   line-height: 0;
 }
@@ -856,6 +888,50 @@ li.L9 {
   color: #282C34;
   cursor: pointer;
   margin: auto;
+}
+
+._request__file-name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.request__file {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.request__file:not(:last-child) {
+  margin: 0 10px 5px;
+}
+
+.request__file span {
+  margin-right: 4px;
+}
+
+.request__file button {
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+.request__file button img {
+  width: 100%;
+  height: 100%;
 }
 
 .request__checklist {
